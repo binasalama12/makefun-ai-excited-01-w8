@@ -4,7 +4,7 @@
 
 # THE BOX WAS ALIVE
 
-He had been shaking that big gift box all morning, convinced it held the toy truck he had been hinting about for weeks, and his hands were already rehearsing how fast he would tear the lid off. Instead the lid burst open on its own and a tiny puppy wearing a crooked red bow launched straight out at him, paws up, ears flying. His gasp is the whole photograph — mouth wide, eyes locked on the dog mid-air, caught in the half-second before joy turned into laughter.
+He had been shaking that big gift box all morning, convinced it held the toy truck he had been hinting about for weeks, and his hands were already rehearsing how fast he would tear the lid off. Instead the lid burst open on its own and a tiny puppy wearing a crooked red bow launched straight out at him, paws up, ears flying. His gasp is the whole photograph — mouth wide, eyes locked on the dog mid-air, caught in the half-second before joy turned into laughter. A heartbeat later he was already reaching for the puppy with both hands, laughing so hard he nearly tipped the empty box over.
 
 The photo was graded gently and saved as entry.png, and main.ts copies it byte-for-byte while recording the sha256 of both source and output deterministically.
 

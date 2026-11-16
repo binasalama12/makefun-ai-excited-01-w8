@@ -25,15 +25,25 @@ function main(): void {
   const outBytes = readFileSync(outputPath);
   const outHash = sha256Hex(outBytes);
   const outSize = statSync(outputPath).size;
+  const sourceSize = statSync(sourcePath).size;
   const match = outHash === sourceHash;
+  const sizeMatch = outSize === sourceSize && outBytes.length === sourceBytes.length;
 
+  console.log(`source: ${sourcePath}`);
+  console.log(`source bytes: ${sourceSize}`);
   console.log(`output: ${outputPath}`);
   console.log(`output bytes: ${outSize}`);
   console.log(`output sha256: ${outHash}`);
   console.log(`source sha256: ${sourceHash}`);
-  console.log(`match: ${match}`);
+  console.log(`hash match: ${match}`);
+  console.log(`size match: ${sizeMatch}`);
+  console.log(
+    match && sizeMatch
+      ? "verified: output is an exact byte-for-byte copy of entry.png"
+      : "verification FAILED: output differs from entry.png",
+  );
 
-  if (!match) {
+  if (!match || !sizeMatch) {
     process.exitCode = 1;
   }
 }
